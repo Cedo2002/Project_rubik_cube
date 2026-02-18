@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="icon" type="image/x-icon" href="slike/rubikova.kocka.png" />
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Početna</a>
+            <a href="istorija.html">Istorija</a>
+            <a href="modeli.html">Modeli</a>
+            <a href="galerija.html">Galerija</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Prijava za školu slaganja</h1>
+        <form>
+            <fieldset>
+                <legend>Rezervacija termina</legend>
+
+                <label for="name">Ime i prezime*</label>
+                <input type="text" id="name" name="ime_prezime" required placeholder="Čedo Milovanović" size="30" /><br>
+                <br>
+
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required placeholder="cedomilovanovic@gmail.com" size="30" /><br>
+                <br>
+
+                <label for="rekord">Vaš rekord*</label>
+                <input type="text" id="rekord" name="rekord" required placeholder="5,54 s" /><br>
+                <br>
+
+                <label for="model">Omiljeni model</label>
+                <select name="model" id="model">
+                    <option value="2x2x2">Pocket Cube</option>
+                    <option value="3x3x3">Rubik's Cube</option>
+                    <option value="4x4x4">Rubik's Revenge</option>
+                    <option value="5x5x5">Professor's Cube</option>
+                    <option value="12">Megaminx</option>
+                </select>
+                <br><br>
+
+                <label for="datum">Datum sledećeg treninga</label>
+                <input type="date" id="datum" name="datum" /><br>
+
+                <p>Da li si se već takmičio?</p>
+                <input type="radio" id="da" name="takmicar" value="da">
+                <label for="da">Da</label>
+                <input type="radio" id="ne" name="takmicar" value="ne">
+                <label for="ne">Ne</label>
+                <br><br>
+
+                <label for="poruka">Dodatna poruka:</label><br>
+                <textarea id="poruka" name="poruka" rows="4" cols="30" placeholder="Ovde upišite nešto o sebi..."></textarea>
+                <br><br>
+
+                <input type="submit" value="Pošalji prijavu">
+                <input type="reset" value="Obriši">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rubikova kocka - Projekat</p>
+    </footer>
+</body>
+</html>
